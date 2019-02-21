@@ -7,5 +7,5 @@ using Test
 end
 
 @testset "Generate some coverage reports" begin
-    @test GitHubActions.cov(true)
+    @test ActionsTestPackage.cov(true)
 end
