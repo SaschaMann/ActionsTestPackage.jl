@@ -1,8 +1,8 @@
-workflow "New workflow" {
+workflow "CI" {
   on = "push"
-  resolves = ["SaschaMann/JuliaActions/julia-runtests"]
+  resolves = ["test"]
 }
 
-action "SaschaMann/JuliaActions/julia-runtests" {
-  uses = "SaschaMann/JuliaActions/julia-runtests"
+action "test" {
+  uses = "SaschaMann/JuliaActions/julia-runtests@master"
 }
