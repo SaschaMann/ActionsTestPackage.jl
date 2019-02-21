@@ -1,6 +1,11 @@
 using ActionsTestPackage
 using Test
 
-@testset "ActionsTestPackage.jl" begin
-    # Write your own tests here.
+@testset "Do some testing" begin
+    @test 1 == 1
+    @test 1 != 0
+end
+
+@testset "Generate some coverage reports" begin
+    @test GitHubActions.cov(true)
 end
